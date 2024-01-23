@@ -1,0 +1,8 @@
+# ide
+.vscode/
+
+# cmake
+build/
+
+# binaries
+bin/main.exe
