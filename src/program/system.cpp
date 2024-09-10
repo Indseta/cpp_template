@@ -1,6 +1,8 @@
-#include <program/console.h>
+#include <program/system.h>
 
-void cmd::clear() {
+#include <iostream>
+
+void System::clear() {
 #ifdef _WIN32
 	std::system("cls");
 #else
@@ -8,19 +10,11 @@ void cmd::clear() {
 #endif
 }
 
-void cmd::pause() {
+void System::pause() {
 #ifdef _WIN32
 	std::system("pause");
 #else
 	std::system("echo Press any key to continue...");
 	std::system("read spkset");
 #endif
-}
-
-void cmd::newline() {
-	std::cout << '\n';
-}
-
-void cmd::fbuffer() {
-	std::cout << std::endl;
 }

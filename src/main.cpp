@@ -1,10 +1,10 @@
-#include <program/console.h>
+#include <program/system.h>
 
 #include <cstdlib>
 #include <iostream>
 
 int main() {
-	cmd::clear();
+	System::clear();
 
 	std::cout << "Hello, world!" << '\n';
 
